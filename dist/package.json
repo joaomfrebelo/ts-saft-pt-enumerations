@@ -1,12 +1,12 @@
 {
   "name": "@joaomfrebelo/ts-saft-pt-enumerations",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "decription": "The most used SAF-T PT enumerations in frontend applications, to avoid the rewriting code in different applications",
   "main": "lib/commonjs/index.js",
   "module": "lib/es6/index.js",
   "sideEffects": false,
   "repository": "git",
-  "url": "git.https://github.com/joaomfrebelo/ts-saft-pt-enumerations.git",
+  "url": "https://github.com/joaomfrebelo/ts-saft-pt-enumerations.git",
   "files": [
     "lib",
     "CHANGELOG.md",

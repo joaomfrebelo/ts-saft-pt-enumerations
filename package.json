@@ -1,6 +1,6 @@
 {
   "name": "ts-saft-pt-enumerations",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The most used SAF-T PT enumerations in frontend applications, to avoid the rewriting code in different applications",
   "main": "dist/index.js",
   "scripts": {
@@ -24,8 +24,8 @@
     "SAF-T PT",
     "Invoice"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Joao M F Rebelo",
+  "license": "MIT",
   "devDependencies": {
     "@parcel/transformer-babel": "^2.8.0",
     "@types/jest": "^29.2.3",
