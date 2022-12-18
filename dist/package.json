@@ -1,6 +1,6 @@
 {
   "name": "@joaomfrebelo/ts-saft-pt-enumerations",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "decription": "The most used SAF-T PT enumerations in frontend applications, to avoid the rewriting code in different applications",
   "main": "lib/commonjs/index.js",
   "module": "lib/es6/index.js",

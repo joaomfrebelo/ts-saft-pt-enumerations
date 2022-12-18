@@ -1,6 +1,6 @@
 {
   "name": "ts-saft-pt-enumerations",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The most used SAF-T PT enumerations in frontend applications, to avoid the rewriting code in different applications",
   "main": "dist/index.js",
   "scripts": {
@@ -13,6 +13,7 @@
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint && (shx cp README.md dist/README.md || echo 'No README.md file to copy')",
+    "publish": "npm run prepare && npm run prepublishOnly && cd ./dist && npm publish && cd ../",
     "preversion": "npm run lint",
     "version": "npm format && git add -A src",
     "watch": "ts -W"

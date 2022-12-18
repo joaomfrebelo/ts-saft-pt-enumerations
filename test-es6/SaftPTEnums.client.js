@@ -20,6 +20,8 @@ import {TaxType} from "../src/TaxType";
 import {WithholdingTaxType} from "../src/WithholdingTaxType";
 import {WorkStatus} from "../src/WorkStatus";
 import {WorkType} from "../src/WorkType";
+import { TaxExemptionCode } from "../src/TaxExemptionCode";
+import { TaxExemptionCodeDescription } from "../src/TaxExemptionCodeDescription";
 
 QUnit.module('Test enum instances', function () {
 
@@ -110,4 +112,16 @@ QUnit.module('Test enum instances', function () {
     QUnit.test('WorkType', function (assert) {
         assert.equal(WorkType.CS, WorkType.CS);
     });
+
+    QUnit.test('Description existence of tax exemption code', function (assert) {
+        for (let code in TaxExemptionCode) {
+            assert.ok(
+              TaxExemptionCodeDescription.getApplicableLawStandard(code)
+            );
+            assert.ok(
+              TaxExemptionCodeDescription.getMentionOnInvoice(code)
+            );
+        }
+    });
+
 });
